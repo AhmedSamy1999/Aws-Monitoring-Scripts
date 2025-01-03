@@ -58,7 +58,7 @@ Required environment variables in .env:
 * AWS_DEFAULT_REGION: AWS region (e.g., "eu-west-3")
 
 
-##AWS Permissions
+## AWS Permissions
 The AWS user requires the following permissions:
 ## ![alt text](image.png)
 
