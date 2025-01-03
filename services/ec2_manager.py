@@ -1,10 +1,12 @@
 import boto3
-from utils.logger import get_logger
+from services.logger import get_logger
+import sys
 
 class EC2Manager:
     def __init__(self):
         self.ec2 = boto3.client('ec2')
         self.logger = get_logger()
+        #print(sys.path)
     
     def list_instances(self):
         """List all EC2 instances"""

@@ -1,5 +1,5 @@
 import boto3
-from utils.logger import get_logger
+from services.logger import get_logger
 
 class S3Manager:
     def __init__(self):
@@ -15,7 +15,7 @@ class S3Manager:
             self.logger.error(f"Error listing S3 buckets: {str(e)}")
             raise
     
-    def create_bucket(self, bucket_name, region='us-east-1'):
+    def create_bucket(self, bucket_name, region='eu-west-3'):
         """Create a new S3 bucket"""
         try:
             self.s3.create_bucket(
